@@ -29,8 +29,8 @@ public class Hogwarts {
 
     public Hogwarts(String nameStudent, int witchcraft, int transgression) {
         this.nameStudent = nameStudent;
-        this.witchcraft = witchcraft;
-        this.transgression = transgression;
+        this.witchcraft = this.witchcraft;
+        this.transgression = this.transgression;
     }
 }
 
