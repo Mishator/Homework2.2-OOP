@@ -92,5 +92,18 @@ public class Hogwarts {
 
         }
     }
+
+    public void compareAnyStudent(Hogwarts first, Hogwarts second) {
+        int firstPoints = first.getWitchcraft() + first.getTransgression();
+        int secondPoints = second.getWitchcraft() + second.getTransgression();
+        if (firstPoints > secondPoints) {
+            System.out.println("Студент " + first.getNameStudent() + " лучше чем " + second.getNameStudent());
+        } else if (firstPoints < secondPoints) {
+            System.out.println("Студент " + second.getNameStudent() + " лучше чем " + first.getNameStudent());
+        } else {
+            System.out.println("Студенеты " + second.getNameStudent() + " и " + first.getNameStudent() + " равны.");
+
+        }
+    }
 }
 

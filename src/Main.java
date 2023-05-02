@@ -24,5 +24,6 @@ public class Main {
         hogwarts.comparePuffenduy ((Puffenduy)students[3], (Puffenduy)students[4]);
         hogwarts.compareKogtevran ((Kogtevran) students[6], (Kogtevran) students[7]);
         hogwarts.compareSlytherin ((Slytherin) students[9], (Slytherin) students[10]);
+        hogwarts.compareAnyStudent(students[0], students[9]);
     }
 }
