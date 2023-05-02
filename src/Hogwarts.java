@@ -64,5 +64,19 @@ public class Hogwarts {
 
         }
     }
+
+    public void compareKogtevran(Kogtevran first,
+                                 Kogtevran second) {
+        int firstPoints = first.getMind() + first.getWisdom() + first.getWit() + first.getCreativity();
+        int secondPoints = second.getMind() + second.getWisdom() + second.getWit() + second.getCreativity();
+        if (firstPoints > secondPoints) {
+            System.out.println("Студент " + first.getNameStudent() + " лучше чем " + second.getNameStudent());
+        } else if (firstPoints < secondPoints) {
+            System.out.println("Студент " + second.getNameStudent() + " лучше чем " + first.getNameStudent());
+        } else {
+            System.out.println("Студенеты " + second.getNameStudent() + " и " + first.getNameStudent() + " равны.");
+
+        }
+    }
 }
 
