@@ -33,4 +33,9 @@ public class Griffindor extends Hogwarts {
     public void setBravery(int bravery) {
         this.bravery = bravery;
     }
+
+    @Override
+    public String toString() {
+        return "Griffindor{" + super.toString() + "nobility=" + nobility + ", honor=" + honor + ", bravery=" + bravery + '}';
+    }
 }

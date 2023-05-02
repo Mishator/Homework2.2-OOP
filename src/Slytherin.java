@@ -53,4 +53,9 @@ public class Slytherin extends Hogwarts {
     public void setRule(int rule) {
         this.rule = rule;
     }
+
+    @Override
+    public String toString() {
+        return "Slytherin{" + super.toString() + "cunning=" + cunning + ", decisiveness=" + decisiveness + ", ambition=" + ambition + ", resourcefulness=" + resourcefulness + ", rule=" + rule + '}';
+    }
 }

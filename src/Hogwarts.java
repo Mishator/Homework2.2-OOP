@@ -32,5 +32,10 @@ public class Hogwarts {
         this.witchcraft = this.witchcraft;
         this.transgression = this.transgression;
     }
+
+    @Override
+    public String toString() {
+        return  "nameStudent='" + nameStudent  + ", witchcraft=" + witchcraft + ", transgression=" + transgression + '}';
+    }
 }
 
