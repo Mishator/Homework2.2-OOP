@@ -35,7 +35,7 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return  "nameStudent='" + nameStudent  + ", witchcraft=" + witchcraft + ", transgression=" + transgression + '}';
+        return  "nameStudent='" + nameStudent  + ", witchcraft=" + witchcraft + ", transgression=" + transgression;
     }
 }
 
