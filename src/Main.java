@@ -10,6 +10,9 @@ public class Main {
                 new Kogtevran("Zhou Chang", 91, 89, 85,81, 91, 96),
                 new Kogtevran("Padma Patil", 91, 96, 89, 87, 92, 95),
                 new Kogtevran("Marcus Belby", 90, 93, 91, 89, 93, 94),
+                new Slytherin("Draco Malfoy", 98, 96, 91, 89, 92, 86, 83),
+                new Slytherin("Graham Montague", 92, 90, 86, 89, 91, 84, 82),
+                new Slytherin("Gregory Goyle", 91, 87, 82, 90, 81, 85, 88)
 
         };
         HogwartsStudentPrinter printer = new HogwartsStudentPrinter();
@@ -20,5 +23,6 @@ public class Main {
         hogwarts.compareGriffindor((Griffindor) students[0], (Griffindor) students[1]);
         hogwarts.comparePuffenduy ((Puffenduy)students[3], (Puffenduy)students[4]);
         hogwarts.compareKogtevran ((Kogtevran) students[6], (Kogtevran) students[7]);
+        hogwarts.compareSlytherin ((Slytherin) students[9], (Slytherin) students[10]);
     }
 }

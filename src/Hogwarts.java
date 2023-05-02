@@ -78,5 +78,19 @@ public class Hogwarts {
 
         }
     }
+
+    public void compareSlytherin(Slytherin first,
+                                 Slytherin second) {
+        int firstPoints = first.getCunning() + first.getDecisiveness() + first.getAmbition() + first.getResourcefulness() + first.getRule();
+        int secondPoints = second.getCunning() + second.getDecisiveness() + second.getAmbition() + second.getResourcefulness() + second.getRule();
+        if (firstPoints > secondPoints) {
+            System.out.println("Студент " + first.getNameStudent() + " лучше чем " + second.getNameStudent());
+        } else if (firstPoints < secondPoints) {
+            System.out.println("Студент " + second.getNameStudent() + " лучше чем " + first.getNameStudent());
+        } else {
+            System.out.println("Студенеты " + second.getNameStudent() + " и " + first.getNameStudent() + " равны.");
+
+        }
+    }
 }
 
