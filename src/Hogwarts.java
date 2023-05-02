@@ -50,5 +50,19 @@ public class Hogwarts {
 
         }
     }
+
+    public void comparePuffenduy(Puffenduy first,
+                                 Puffenduy second) {
+        int firstPoints = first.getHardworking() + first.getFidelity() + first.getHonesty();
+        int secondPoints = second.getHardworking() + second.getFidelity() + second.getHonesty();
+        if (firstPoints > secondPoints) {
+            System.out.println("Студент " + first.getNameStudent() + " лучше чем " + second.getNameStudent());
+        } else if (firstPoints < secondPoints) {
+            System.out.println("Студент " + second.getNameStudent() + " лучше чем " + first.getNameStudent());
+        } else {
+            System.out.println("Студенеты " + second.getNameStudent() + " и " + first.getNameStudent() + " равны.");
+
+        }
+    }
 }
 
