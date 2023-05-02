@@ -9,5 +9,7 @@ public class Main {
         for (Hogwarts student : students) {
             printer.print(student);
         }
+        Hogwarts hogwarts = new Hogwarts("Harry Potter",81, 89);
+        hogwarts.compareGriffindor((Griffindor) students[0], (Griffindor) students[1]);
     }
 }

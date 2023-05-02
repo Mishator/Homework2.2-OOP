@@ -29,13 +29,26 @@ public class Hogwarts {
 
     public Hogwarts(String nameStudent, int witchcraft, int transgression) {
         this.nameStudent = nameStudent;
-        this.witchcraft = this.witchcraft;
-        this.transgression = this.transgression;
+        this.witchcraft = witchcraft;
+        this.transgression = transgression;
     }
 
     @Override
     public String toString() {
         return  "nameStudent='" + nameStudent  + ", witchcraft=" + witchcraft + ", transgression=" + transgression;
+    }
+    public void compareGriffindor(Griffindor first,
+                                  Griffindor second) {
+        int firstPoints = first.getBravery() + first.getHonor() + first.getNobility();
+        int secondPoints = second.getBravery() + second.getHonor() + second.getNobility();
+        if (firstPoints > secondPoints) {
+            System.out.println("Студент " + first.getNameStudent() + " лучше чем " + second.getNameStudent());
+        } else if (firstPoints < secondPoints) {
+            System.out.println("Студент " + second.getNameStudent() + " лучше чем " + first.getNameStudent());
+        } else {
+            System.out.println("Студенеты " + second.getNameStudent() + " и " + first.getNameStudent() + " равны.");
+
+        }
     }
 }
 
